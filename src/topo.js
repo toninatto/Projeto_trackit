@@ -1,11 +1,11 @@
-import bobesponja from "./Bob.png";
 
-export default function Topo () {
+
+export default function Topo ({img}) {
 
     return (
         <div className="topo">
             <h1>TrackIt</h1>
-            <img src={bobesponja} alt="qualquer coisa"/>
+            <img src={img} alt="Perfil"/>
         </div>
     )
 }

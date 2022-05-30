@@ -2,6 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Playball&family=Roboto&display=swap');
 
 
+
+.corpo {
+    background-color: #f2f2f2;
+    height: 667px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+
+
 h1 {
     font-family: 'Playball';
     color: #126BA5;
@@ -25,6 +34,11 @@ input {
     font-size: 20px;
     Color: #DBDBDB;
     
+}
+span {
+    font-family: 'Lexend Deca';
+    font-size: 20px;
+    Color: #DBDBDB;
 }
 
 .inputs {
@@ -73,15 +87,46 @@ a p{
     align-items: center;
     padding-inline: 18px;
     box-sizing: border-box;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 .topo h1{
     color: #ffffff;
     font-size: 39px;
 }
+.topo img {
+    width: 51px;
+    height: 51px;
+    border-radius: 25px;
+}
+.menu {
+    width: 100%;
+    height: 70px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 30px;
+    box-sizing: border-box;
+    
+    position: fixed;
+    bottom: 0;
+    left: 0;
+}
+h4 {
+    font-family: 'Lexend Deca';
+    font-size: 18px;
+    Color: #52B6FF;
+    text-decoration: none;
+
+}
 .add-meus-habitos {
     width: 100%;
     height: 85px;
-    background-color: #E5E5E5;
+    
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,20 +137,152 @@ a p{
     font-family: 'Lexend Deca';
     font-size: 23px;
     color: #126BA5;    
+    
 }
 .add-habito {
-    background-color: #52B6FF;
     width: 40px;
-    height: 35px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 5px;
-    box-sizing: border-box;
+    height: 35px;   
+    margin-bottom: 0px;
+    border: 0px;
+    padding: 0px;    
 }
 .add-habito h2{
     font-family: 'Lexend Deca';
     color: #ffffff;
-    font-size: 27px;
+    font-size: 27px;   
+}
+.sem-habitos {
+    
+    word-wrap: break-word;
+    margin-inline: 18px;
+}
+.sem-habitos p{
+    font-family: 'Lexend Deca';
+    font-size: 18px;
+    Color: #666666;
+}
+.definir-habito {
+    padding:16px;
+    padding-bottom: 80px;
+    background-color: #ffffff;
+    margin-inline: 17px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 29px;
+}
+.semana {
+    display: flex;
+
+}
+.nao-clicado {
+    background-color: #ffffff;
+    width: 30px;
+    height: 30px;     
+    margin-right: 4px;    
+    border: 1px solid #D5D5D5;
+    border-radius: 5px;    
+    box-sizing: border-box;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clicado {
+    background-color: #cfcfcf;
+    width: 30px;
+    height: 30px;     
+    margin-right: 4px;    
+    border: 1px solid #D5D5D5;
+    border-radius: 5px;    
+    box-sizing: border-box;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clicado span {
+    color: #ffffff;
+}
+.canc-salvar {
+    display: flex;
+    margin-top: 29px;
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    
+}
+ul {
+    width: 84px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ul p {
+
+    font-size: 16px;
+    color: #52B6FF;
+
+}
+.canc-salvar button {
+    
+    width: 84px;
+    height: 35px;
+    border: none;       
+    box-sizing: border-box;
+    margin-bottom: 0px;
+    
+}
+.canc-salvar p {
+    
+    font-size: 16px;
+    
+}
+h3 {
+    font-family: 'Lexend Deca';
+    color: #666666;
+    font-size: 20px;
+    margin-bottom: 8px;  
+}
+.habito-carregado{
+    padding:15px;    
+    background-color: #ffffff;
+    margin-inline: 17px;
+    border-radius: 5px;
+    box-sizing: border-box;   
+    margin-bottom: 10px;
+    position: relative;
+}
+.habito-carregado img {
+    position: absolute;
+    top: 11px;
+    right: 10px;
+}
+.circulo-hoje{
+    width: 91px;
+    height: 91px;
+    border-radius: 47px;
+    background-color: #52B6FF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    position: fixed;
+    bottom: 10px;
+    left: 37.5%;
+    text-decoration: none;
+}
+.circulo-hoje h4{
+    color: #ffffff;
    
 }
+.habito-today {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    height: 94px;
+    padding-inline: 14px;
+    margin-inline: 17px;
+    box-sizing: border-box;
+}
+
